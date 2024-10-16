@@ -8,6 +8,7 @@ console.log(`Db connected!! ${connectionInstance.connection.host} `);
 }
 catch (error){
     console.log("MONGODB Connection Error", error);
+    throw error;
     process.exit(1); //node method
 
 }
